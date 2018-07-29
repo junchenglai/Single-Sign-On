@@ -122,9 +122,9 @@ namespace IdentityServer
                     AllowedGrantTypes = GrantTypes.Implicit,
                     // 允许通过浏览器传输 token
                     AllowAccessTokensViaBrowser = true,
-                    RedirectUris = { "http://39.108.185.8:5003/#/SignCallback/" },
-                    PostLogoutRedirectUris = { "http://39.108.185.8:5003/index.html" },
-                    AllowedCorsOrigins = { "http://39.108.185.8:5003" },
+                    RedirectUris = { "http://localhost:5003/callback.html" },
+                    PostLogoutRedirectUris = { "http://localhost:5003/index.html" },
+                    AllowedCorsOrigins = { "http://localhost:5003/" },
 
                     AllowedScopes =
                     {
