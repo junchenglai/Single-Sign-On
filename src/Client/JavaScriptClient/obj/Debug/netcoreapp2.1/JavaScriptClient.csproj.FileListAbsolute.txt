@@ -1,0 +1,14 @@
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\bin\Debug\netcoreapp2.1\JavaScriptClient.deps.json
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\bin\Debug\netcoreapp2.1\JavaScriptClient.runtimeconfig.json
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\bin\Debug\netcoreapp2.1\JavaScriptClient.runtimeconfig.dev.json
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\bin\Debug\netcoreapp2.1\JavaScriptClient.dll
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\bin\Debug\netcoreapp2.1\JavaScriptClient.pdb
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\obj\Debug\netcoreapp2.1\JavaScriptClient.csprojAssemblyReference.cache
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\obj\Debug\netcoreapp2.1\JavaScriptClient.csproj.CoreCompileInputs.cache
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\obj\Debug\netcoreapp2.1\JavaScriptClient.RazorAssemblyInfo.cache
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\obj\Debug\netcoreapp2.1\JavaScriptClient.RazorAssemblyInfo.cs
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\obj\Debug\netcoreapp2.1\JavaScriptClient.AssemblyInfoInputs.cache
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\obj\Debug\netcoreapp2.1\JavaScriptClient.AssemblyInfo.cs
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\obj\Debug\netcoreapp2.1\JavaScriptClient.RazorTargetAssemblyInfo.cache
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\obj\Debug\netcoreapp2.1\JavaScriptClient.dll
+D:\实训\vote-collector\backend\SSO\src\Client\JavaScriptClient\obj\Debug\netcoreapp2.1\JavaScriptClient.pdb
