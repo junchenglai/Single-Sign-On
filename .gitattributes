@@ -1,3 +1,3 @@
-*.cs inguist-language=C#
-*.cshtml inguist-language=C#
-*.json  inguist-language=JSON
+*.cs linguist-language=C#
+*.cshtml linguist-language=C#
+*.json  linguist-language=JSON
