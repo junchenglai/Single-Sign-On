@@ -1,55 +1,4 @@
-<<<<<<< HEAD
-*.doc  diff=astextplain
-*.DOC	diff=astextplain
-*.docx	diff=astextplain
-*.DOCX	diff=astextplain
-*.dot	diff=astextplain
-*.DOT	diff=astextplain
-*.pdf	diff=astextplain
-*.PDF	diff=astextplain
-*.rtf	diff=astextplain
-*.RTF	diff=astextplain
 
-*.jpg  	binary
-*.png 	binary
-*.gif 	binary
-
-*.cs text=auto diff=csharp 
-*.vb text=auto
-*.resx text=auto
-*.c text=auto
-*.cpp text=auto
-*.cxx text=auto
-*.h text=auto
-*.hxx text=auto
-*.py text=auto
-*.rb text=auto
-*.java text=auto
-*.html text=auto
-*.htm text=auto
-*.css text=auto
-*.scss text=auto
-*.sass text=auto
-*.less text=auto
-*.js text=auto
-*.lisp text=auto
-*.clj text=auto
-*.sql text=auto
-*.php text=auto
-*.lua text=auto
-*.m text=auto
-*.asm text=auto
-*.erl text=auto
-*.fs text=auto
-*.fsx text=auto
-*.hs text=auto
-
-*.csproj text=auto
-*.vbproj text=auto
-*.fsproj text=auto
-*.dbproj text=auto
-*.sln text=auto eol=crlf
-=======
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
@@ -63,7 +12,8 @@
 # default for csharp files.
 # Note: This is only used by command line
 ###############################################################################
-#*.cs     diff=csharp
+*.cs     diff=csharp
+*.cshtml     diff=csharp
 
 ###############################################################################
 # Set the merge driver for project and solution files
@@ -75,27 +25,27 @@
 # these files as binary and thus will always conflict and require user
 # intervention with every merge. To do so, just uncomment the entries below
 ###############################################################################
-#*.sln       merge=binary
-#*.csproj    merge=binary
-#*.vbproj    merge=binary
-#*.vcxproj   merge=binary
-#*.vcproj    merge=binary
-#*.dbproj    merge=binary
-#*.fsproj    merge=binary
-#*.lsproj    merge=binary
-#*.wixproj   merge=binary
-#*.modelproj merge=binary
-#*.sqlproj   merge=binary
-#*.wwaproj   merge=binary
+*.sln       merge=binary
+*.csproj    merge=binary
+*.vbproj    merge=binary
+*.vcxproj   merge=binary
+*.vcproj    merge=binary
+*.dbproj    merge=binary
+*.fsproj    merge=binary
+*.lsproj    merge=binary
+*.wixproj   merge=binary
+*.modelproj merge=binary
+*.sqlproj   merge=binary
+*.wwaproj   merge=binary
 
 ###############################################################################
 # behavior for image files
 #
 # image files are treated as binary by default.
 ###############################################################################
-#*.jpg   binary
-#*.png   binary
-#*.gif   binary
+*.jpg   binary
+*.png   binary
+*.gif   binary
 
 ###############################################################################
 # diff behavior for common document formats
@@ -104,16 +54,16 @@
 # is only available from the command line. Turn it on by uncommenting the 
 # entries below.
 ###############################################################################
-#*.doc   diff=astextplain
-#*.DOC   diff=astextplain
-#*.docx  diff=astextplain
-#*.DOCX  diff=astextplain
-#*.dot   diff=astextplain
-#*.DOT   diff=astextplain
-#*.pdf   diff=astextplain
-#*.PDF   diff=astextplain
-#*.rtf   diff=astextplain
-#*.RTF   diff=astextplain
+*.doc   diff=astextplain
+*.DOC   diff=astextplain
+*.docx  diff=astextplain
+*.DOCX  diff=astextplain
+*.dot   diff=astextplain
+*.DOT   diff=astextplain
+*.pdf   diff=astextplain
+*.PDF   diff=astextplain
+*.rtf   diff=astextplain
+*.RTF   diff=astextplain
 
 
 ###############################################################################
