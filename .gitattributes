@@ -1,2 +1,2 @@
-special-vendored-path/src/Server/IdentityServer/wwwroot/lib/ linguist-vendored
+special-vendored-path/src/Server/IdentityServer/wwwroot/lib/* linguist-vendored
 src/Client/JavaScriptClient/wwwroot/js/oidc-client.js     linguist-vendored=false
