@@ -1,0 +1,8 @@
+2018-07-31 01:08:02.148 +08:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-31 01:08:02.237 +08:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-31 01:08:02.242 +08:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-31 01:08:02.243 +08:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-31 01:08:02.243 +08:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-31 01:08:02.642 +08:00 [DBG] Starting token cleanup
+2018-07-31 01:51:45.796 +08:00 [DBG] TaskCanceledException. Exiting.
+2018-07-31 01:51:45.838 +08:00 [DBG] Stopping token cleanup

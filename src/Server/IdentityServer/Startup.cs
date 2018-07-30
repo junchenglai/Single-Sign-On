@@ -1,7 +1,9 @@
 ﻿using IdentityServer.DbContext;
 using IdentityServer.Models;
+using IdentityServer4;
 using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -18,7 +20,7 @@ using System.Reflection;
 namespace IdentityServer
 {
     /// <summary>
-    /// 
+    /// 配置应用程序的服务及请求管道
     /// </summary>
     public class Startup
     {
@@ -26,6 +28,11 @@ namespace IdentityServer
 
         private IHostingEnvironment Environment { get; }
 
+        /// <summary>
+        /// 初始化
+        /// </summary>
+        /// <param name="configuration">配置文件</param>
+        /// <param name="environment">环境变量</param>
         public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
@@ -145,7 +152,7 @@ namespace IdentityServer
                 serviceScope.ServiceProvider.GetRequiredService<PersistedGrantDbContext>().Database.Migrate();
                 serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>().Database.Migrate();
 
-                var context = serviceScope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
+                ConfigurationDbContext context = serviceScope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
                 context.Database.Migrate();
                 if (!context.Clients.Any())
                 {
@@ -173,6 +180,8 @@ namespace IdentityServer
                     }
                     context.SaveChanges();
                 }
+
+
             }
         }
     }

@@ -112,28 +112,6 @@ namespace IdentityServer
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.Address
                     }
-                },
-
-                // 隐式客户端 （JavaScript）
-                new Client
-                {
-                    ClientId = "voteCollector",
-                    ClientName = "投票系统",
-                    AllowedGrantTypes = GrantTypes.Implicit,
-                    // 允许通过浏览器传输 token
-                    AllowAccessTokensViaBrowser = true,
-                    RedirectUris = { "http://localhost:5003/callback.html" },
-                    PostLogoutRedirectUris = { "http://localhost:5003/index.html" },
-                    AllowedCorsOrigins = { "http://localhost:5003/" },
-
-                    AllowedScopes =
-                    {
-                        IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile,
-                        IdentityServerConstants.StandardScopes.Phone,
-                        IdentityServerConstants.StandardScopes.Email,
-                        IdentityServerConstants.StandardScopes.Address
-                    }
                 }
             };
         }
