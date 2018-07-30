@@ -1,2 +1,2 @@
-\src\Server\IdentityServer\wwwroot\lib     diff=nodiff
-\src\Client\JavaScriptClient\wwwroot\js\oidc-client.js     diff=nodiff
+src\Server\IdentityServer\wwwroot\lib\*     diff=nodiff
+src\Client\JavaScriptClient\wwwroot\js\oidc-client.js     diff=nodiff
