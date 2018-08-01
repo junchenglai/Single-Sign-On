@@ -194,6 +194,23 @@
             <param name="errorId"></param>
             <returns></returns>
         </member>
+        <member name="T:IdentityServer.DbContext.ApplicationDbContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:IdentityServer.DbContext.ApplicationDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{IdentityServer.DbContext.ApplicationDbContext})">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="M:IdentityServer.DbContext.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
         <member name="T:IdentityServer.Models.ConsentInputModel">
             <summary>
             授权请求数据模板
