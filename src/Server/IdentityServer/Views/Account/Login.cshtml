@@ -6,20 +6,16 @@
     ViewData["Title"] = "登录";
 }
 
-<div class="login-page">
-    <div class="page-header">
-        <h1>登录</h1>
-    </div>
+<div class="container login-page">
+    <h1 class="mt-5">登录</h1>
     @Html.Partial("_ValidationSummary")
     <div class="row">
         @if (Model.EnableLocalLogin)
         {
             <div class="col-sm-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">本地登录</h3>
-                    </div>
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-header">本地登录</div>
+                    <div class="card-body">
                         <form asp-route="Login">
                             <input type="hidden" asp-for="ReturnUrl" />
                             <fieldset>
@@ -53,16 +49,16 @@
         @if (Model.VisibleExternalProviders.Any())
         {
             <div class="col-md-6 col-sm-6 external-providers">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">其它登录方式</h3>
+                <div class="card">
+                    <div class="card-header">
+                        其它登录方式
                     </div>
-                    <div class="panel-body">
+                    <div class="card-body">
                         <ul class="list-inline">
                             @foreach (var provider in Model.VisibleExternalProviders)
                             {
                                 <li>
-                                    <a class="btn btn-default"
+                                    <a class="btn btn-primary"
                                        asp-action="ExternalLogin"
                                        asp-route-provider="@provider.AuthenticationScheme"
                                        asp-route-returnUrl="@Model.ReturnUrl">
