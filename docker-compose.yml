@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  javascriptclient:
+    image: ${DOCKER_REGISTRY-}javascriptclient
+    build:
+      context: .
+      dockerfile: src/Client/JavaScriptClient/Dockerfile
+
+  identityserver:
+    image: ${DOCKER_REGISTRY-}identityserver
+    build:
+      context: .
+      dockerfile: src/Server/IdentityServer/Dockerfile
+

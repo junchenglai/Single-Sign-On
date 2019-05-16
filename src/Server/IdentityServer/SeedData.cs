@@ -23,7 +23,7 @@ namespace IdentityServer
         /// <param name="serviceProvider"></param>
         public static void EnsureSeedData(IServiceProvider serviceProvider)
         {
-            Console.WriteLine("Seeding database...");
+            Console.WriteLine("初始化数据库中...");
 
             using (var scope = serviceProvider.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
@@ -66,11 +66,11 @@ namespace IdentityServer
                         {
                             throw new Exception(result.Errors.First().Description);
                         }
-                        Console.WriteLine("alice created");
+                        Console.WriteLine("账户 alice 创建成功");
                     }
                     else
                     {
-                        Console.WriteLine("alice already exists");
+                        Console.WriteLine("账户 alice 已存在");
                     }
 
                     var bob = userMgr.FindByNameAsync("bob").Result;
@@ -100,16 +100,16 @@ namespace IdentityServer
                         {
                             throw new Exception(result.Errors.First().Description);
                         }
-                        Console.WriteLine("bob created");
+                        Console.WriteLine("账户 bob 创建成功");
                     }
                     else
                     {
-                        Console.WriteLine("bob already exists");
+                        Console.WriteLine("账户 bob 已存在");
                     }
                 }
             }
 
-            Console.WriteLine("Done seeding database.");
+            Console.WriteLine("初始化数据库已完成");
             Console.WriteLine();
         }
 
@@ -117,7 +117,7 @@ namespace IdentityServer
         {
             if (!context.Clients.Any())
             {
-                Console.WriteLine("Clients being populated");
+                Console.WriteLine("客户端信息开始添加");
                 foreach (var client in Config.GetClients().ToList())
                 {
                     context.Clients.Add(client.ToEntity());
@@ -126,12 +126,12 @@ namespace IdentityServer
             }
             else
             {
-                Console.WriteLine("Clients already populated");
+                Console.WriteLine("客户端信息添加完成");
             }
 
             if (!context.IdentityResources.Any())
             {
-                Console.WriteLine("IdentityResources being populated");
+                Console.WriteLine("认证资源开始添加");
                 foreach (var resource in Config.GetIdentityResources().ToList())
                 {
                     context.IdentityResources.Add(resource.ToEntity());
@@ -140,12 +140,12 @@ namespace IdentityServer
             }
             else
             {
-                Console.WriteLine("IdentityResources already populated");
+                Console.WriteLine("认证资源添加完成");
             }
 
             if (!context.ApiResources.Any())
             {
-                Console.WriteLine("ApiResources being populated");
+                Console.WriteLine("API资源开始添加");
                 foreach (var resource in Config.GetApiResources().ToList())
                 {
                     context.ApiResources.Add(resource.ToEntity());
@@ -154,7 +154,7 @@ namespace IdentityServer
             }
             else
             {
-                Console.WriteLine("ApiResources already populated");
+                Console.WriteLine("API资源添加完成");
             }
         }
     }

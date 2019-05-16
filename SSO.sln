@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2035
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2C838234-F445-4A26-926B-880C7590737B}"
 EndProject
@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "release", "release", "{DCCB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JavaScriptClient", "src\Client\JavaScriptClient\JavaScriptClient.csproj", "{4415FCCC-D354-42B0-BC45-854A0459A632}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsWebApp1", "NodejsWebApp1\NodejsWebApp1.njsproj", "{3C48A753-BDE3-4938-A0A9-A3EE0E42F581}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{64E39C3E-7EAB-4242-A16B-C7A7011C3825}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,10 @@ Global
 		{4415FCCC-D354-42B0-BC45-854A0459A632}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4415FCCC-D354-42B0-BC45-854A0459A632}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4415FCCC-D354-42B0-BC45-854A0459A632}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C48A753-BDE3-4938-A0A9-A3EE0E42F581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C48A753-BDE3-4938-A0A9-A3EE0E42F581}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C48A753-BDE3-4938-A0A9-A3EE0E42F581}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C48A753-BDE3-4938-A0A9-A3EE0E42F581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E39C3E-7EAB-4242-A16B-C7A7011C3825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E39C3E-7EAB-4242-A16B-C7A7011C3825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E39C3E-7EAB-4242-A16B-C7A7011C3825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E39C3E-7EAB-4242-A16B-C7A7011C3825}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,7 +44,6 @@ Global
 		{DB9AF4B6-163C-4DAE-9CED-585926BB4CA0} = {4A458E75-E3F9-4E35-92B5-15BF49259BED}
 		{DACE81CC-C4E3-4013-A481-F517553C7EC8} = {2C838234-F445-4A26-926B-880C7590737B}
 		{4415FCCC-D354-42B0-BC45-854A0459A632} = {DACE81CC-C4E3-4013-A481-F517553C7EC8}
-		{3C48A753-BDE3-4938-A0A9-A3EE0E42F581} = {DACE81CC-C4E3-4013-A481-F517553C7EC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7C743762-D233-4A07-B4BC-88890920CD06}
