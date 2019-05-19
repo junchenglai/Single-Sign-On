@@ -1,11 +1,24 @@
 version: '3.4'
 
 services:
-  javascriptclient:
-    image: ${DOCKER_REGISTRY-}javascriptclient
-    build:
-      context: .
-      dockerfile: src/Client/JavaScriptClient/Dockerfile
+  db:
+    image: mysql:8.0.13
+    command: 
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+    restart: always
+    environment:
+      MYSQL_ROOT_HOST: %
+      MYSQL_ROOT_PASSWORD: 123456
+    ports:
+       - "3306:3306"
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
 
   identityserver:
     image: ${DOCKER_REGISTRY-}identityserver
@@ -13,3 +26,8 @@ services:
       context: .
       dockerfile: src/Server/IdentityServer/Dockerfile
 
+  javascriptclient:
+    image: ${DOCKER_REGISTRY-}javascriptclient
+    build:
+      context: .
+      dockerfile: src/Client/JavaScriptClient/Dockerfile
